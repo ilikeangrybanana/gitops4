@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: '12'
       - name: test msg
-        run: echo this is a test message
+        run: echo this is a test message from dev
       - name: run test
         run: npm run test
       - name: run failing test
