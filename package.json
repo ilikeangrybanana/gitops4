@@ -1,0 +1,12 @@
+{
+  "name": "gitops4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Holla: Test successfull 🎉🎈\"",
+    "test:fail": "echo \"Ohh Shit: Test failed 😢💔\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
