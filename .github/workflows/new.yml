@@ -1,0 +1,10 @@
+name: new_work_flow
+
+on: push
+
+jobs: 
+  newbuilds:
+    runs-on: ubuntu-latest
+    steps: 
+      name: new build
+      run: echo "This is new build"
