@@ -1,6 +1,6 @@
 name: issue_cmt_action
 
-on: issues
+on: issue_comment
 
 jobs:
   build:
