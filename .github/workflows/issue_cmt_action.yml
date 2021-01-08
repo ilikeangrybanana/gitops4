@@ -1,0 +1,11 @@
+name: issue_cmt_action
+
+on: issues
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: test msg
+        run: echo this is a test message on issues cmt
