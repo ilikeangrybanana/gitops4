@@ -1,0 +1,18 @@
+name: qwer_on_dev
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '12'
+      - name: test msg
+        run: echo this is a test message from qwer on dev
+      - name: run test
+        run: npm run test
+      - name: run failing test
+        run: npm run test:fail
