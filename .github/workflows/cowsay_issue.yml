@@ -1,0 +1,14 @@
+name: issue_action1
+
+on: issues
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: docker/whalesay
+    steps:
+      - uses: actions/checkout@v2
+      - name: test msg
+        run: echo this is a test message on issues
+      - name: cowsay test
+        run: cowsay "Moo Moo"
