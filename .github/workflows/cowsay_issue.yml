@@ -1,4 +1,4 @@
-name: issue_action1
+name: cowsay_issue
 
 on: issues
 
@@ -12,3 +12,8 @@ jobs:
         run: echo this is a test message on issues
       - name: cowsay test
         run: cowsay "Moo Moo"
+      - uses: Naturalclar/issue-action@v2.0.2
+        with:
+          title-or-body: "both"
+          parameters: '[ {"keywords": ["cowsay"], "labels": ["TEST"]}, {"keywords": ["help", "guidance"], "labels": ["help-wanted"], "assignees": ["ilikeangrybanana"]}]'
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
